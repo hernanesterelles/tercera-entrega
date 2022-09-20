@@ -1,0 +1,71 @@
+.clasesonline {
+    display: flex;
+    align-items: center;
+    flex-direction: column ;  
+ }  
+.clasesonline{
+    padding: 2.5rem;
+    width: 100%;
+    height: 100%;   
+    }
+    
+.clasesonline h2{
+    font-size:40px ;
+}
+.clasesonline table {
+    height: 250px;
+    width: 50%;  
+    font-size: 20px;
+    font-weight: 600;
+    border:5px  rgb(8, 8, 8);      
+}
+
+th{
+    text-align: center;
+    border: 3px solid  rgb(8, 8, 8);
+}
+td{
+    text-align: center;
+    border: 3px solid  rgb(8, 8, 8);
+} 
+.clasesonline{
+    width: 100%;
+    height: 50vh;
+    color: rgb(5, 0, 0);
+    background: linear-gradient(45deg,rgba(255, 255, 254, 0.904),rgb(248, 249, 252),rgba(177, 191, 207, 0.986),rgba(45, 118, 131, 0.26));
+    background-size: 400% 400%;
+    position: relative;
+    animation: clase 5s ease-in-out infinite;    
+}
+
+
+@keyframes clase{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+#liveAlertBtn{
+    background-color: #1378c5;
+    height: 50px;
+    width: 200px;
+    font-size: 15px;
+    color: antiquewhite;
+    margin: 5px;
+ }
+ .prof{
+    display: flex;
+    flex-direction: column; 
+    
+}
+.clas{    
+    display: flex;
+}
+.prof img{   
+    height: 200px;
+    width: 300px; 
+} 
+.clas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    }   

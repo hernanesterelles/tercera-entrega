@@ -1,0 +1,85 @@
+
+
+
+
+header {
+  display: flex;
+  height: 70;
+  width: auto;    
+  justify-content: center;     
+  padding: 10px;   
+  background: $color-principal;    
+  text-align: center;  
+     
+   }
+   .balma{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 50px;
+    font-weight: 600;
+    background:linear-gradient(purple, red);
+    
+      
+    
+  }.navbar-brand img{
+    width: 250px;
+    min-height: 100px;    
+    
+  }  
+   
+.carrito img{
+    display: flex;
+    height: 50px;
+    width: 50px;   
+    
+} 
+
+main{
+  display: flex; 
+  position: relative;   
+  padding: 2rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}.marca{
+  text-align: center;    
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+}  
+.destacados{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  align-items: center;    
+}
+.col1{
+  height: 200px;
+  width: 300px;
+}
+.desta h2{
+  @extend .marca ;
+}
+
+.formasdepago img{ 
+  display: flex;   
+  height: 50px;
+  width: 50px;      
+}
+.navbar-toggler-icon{
+  background-color: #c9c9c9;
+}
+
+.carousel-item{
+  height: 700px;
+  width: 100%;
+  
+  
+}
+
+  
+  
