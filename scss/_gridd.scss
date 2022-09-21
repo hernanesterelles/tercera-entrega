@@ -1,12 +1,6 @@
-.title img{
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-}
-.carrito img{
-    height: 50px;
-    width: 50px;
-}
+
+
+
 .container {
     width: 90%;
     max-width: 1000px;
@@ -15,12 +9,18 @@
     gap: 1.6em;
     /* grid-template-columns: repeat(4, 1fr) 3%; */
     grid-template-columns: repeat(5, 1fr);
+    @include tablet {
+        display: block;     
+        justify-content: center;
+
+    }
 }
 
 .container>.headerr, .container>.content, .container>.sidebar, .container>.footer, .container>div {
     background: #fff;
     padding: 18px;
     border: 1px solid #000000;
+    @include about
 }
 
 .container>.headerr , .container>.footer {
@@ -29,14 +29,27 @@
     color: #ffffff;
     
 }
-.headerr.somos{
-    display: flex;
-    text-align: center;
+.headerr{
+    @include mobile {
+        width: 250px;
+    } 
+    
 }
-
 .container>.content {
     grid-column: span 3;
     grid-row: span 4;
+    @include mobile {
+        width: 250px;
+
+    }
+    @include tablet{        
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;        
+            justify-content: center;
+            padding: 10px;            
+            align-items: center; 
+    }
 }
 
 .content>.article {
@@ -45,6 +58,10 @@
     margin-top: 5px;
     color: #dfe6e9;
     font-size: 15px;
+    @include tablet{
+        align-items: center;
+        padding: 8px;
+    }
     
 }
 
@@ -64,10 +81,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile{
+        width: 250px;
+    }
+    @include tablet {
+        grid-column: 1/ -1;
+        flex-direction: column;        
+        justify-content: center;
+    }
 }
 
 .container .sidebar img {
     display: block;
     width: 100%;
     margin-top: 5px;
+   
+}
+.footer{
+    @include mobile {
+        width: 250px;
+    }
 }
