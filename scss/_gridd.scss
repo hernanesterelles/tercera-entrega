@@ -6,8 +6,7 @@
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
-    gap: 1.6em;
-    /* grid-template-columns: repeat(4, 1fr) 3%; */
+    gap: 1.6em;    
     grid-template-columns: repeat(5, 1fr);
     @include tablet {
         display: block;     
