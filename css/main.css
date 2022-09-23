@@ -25,9 +25,6 @@ header {
   background: #f9f9fa;
   text-align: center; }
 
-h2:hover {
-  color: #e041e0; }
-
 .navbar-brand img {
   width: 250px;
   min-height: 100px; }
