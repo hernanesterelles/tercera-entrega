@@ -1,103 +1,25 @@
 
-
-
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;    
-    grid-template-columns: repeat(5, 1fr);
-    @include tablet {
-        display: block;     
-        justify-content: center;
-
-    }
-}
-
-.container>.headerr, .container>.content, .container>.sidebar, .container>.footer, .container>div {
-    background: #fff;
-    padding: 18px;
-    border: 1px solid #000000;
-    @include about
-}
-
-.container>.headerr , .container>.footer {
-    grid-column: 1/-1;
-    background-color: #1378c5;
-    color: #ffffff;
-    
-}
-.headerr{
-    @include mobile {
-        width: 250px;
-    } 
-    
-}
-.container>.content {
-    grid-column: span 3;
-    grid-row: span 4;
-    @include mobile {
-        width: 250px;
-
-    }
-    @include tablet{        
-            grid-column: 1 / -1;
-            display: flex;
-            flex-direction: column;        
-            justify-content: center;
-            padding: 10px;            
-            align-items: center; 
-    }
-}
-
-.content>.article {
-    background: #808e9b;
-    padding: 0px;
-    margin-top: 5px;
-    color: #dfe6e9;
-    font-size: 15px;
-    @include tablet{
-        align-items: center;
-        padding: 8px;
-    }
-    
-}
-
-.content .article h1,
-.content .article p {
-    padding: 5px;
-}
-.article h1{
-    font-size: 25px;
-}
-
-.container>.sidebar {
-    grid-column: span 2;
-    grid-row: auto;
-    background: #485460;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include mobile{
-        width: 250px;
-    }
-    @include tablet {
-        grid-column: 1/ -1;
-        flex-direction: column;        
-        justify-content: center;
-    }
-}
-
-.container .sidebar img {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
-   
-}
 .footer{
     @include mobile {
         width: 250px;
     }
+}.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr) );
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 30px;
+    grid-auto-flow: dense;
+    margin-top: 5px;
 }
+.card-title{
+    font-size: 40px;
+}
+
+.card-text{
+    font-size: 25px;
+}
+
+
+    
+

@@ -23,55 +23,8 @@ $color:('principal':rgb(249, 249, 250),'secundario': rgb(8, 8, 8),'relleno' :#7d
         
       @content;
     }
-}
- @mixin about {    
-  
-@media screen and (max-width: 960px){
-    .container{
-        width: 300px;
-        padding: 8px;
-        display: block;
-    }
-    .content{
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        
-    }
-    .headerr{
-        width: 400px;
-    }
-    .sidebar{
-        width: 400px;
-    }
-    .footer{
-        width: 400px;
-    }
- } 
- }
- @media screen and (max-width: 768px) {
-    .container{
-     display: block;
+}  
      
-     
-     justify-content: center;
-    
-    }  
-    
-    .container .sidebar {
-        grid-column: 1/ -1;
-        flex-direction: column;        
-        justify-content: center;
-        
-    }
-    .title{
-        display: flex;
-        width: 500px;
-        flex-direction: column;        
-        justify-content: center;
-    }
-    
-    }  
     @mixin roboto {
         font-family: 'Mouse Memoirs', sans-serif;
         font-family: 'Roboto', sans-serif;
