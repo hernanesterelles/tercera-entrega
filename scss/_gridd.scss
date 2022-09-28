@@ -14,10 +14,17 @@
 }
 .card-title{
     font-size: 40px;
+     @include mobile {
+        font-size: 15px;
+    }
 }
+
 
 .card-text{
     font-size: 25px;
+    @include mobile{
+        font-size: 10px;
+    }
 }
 
 
