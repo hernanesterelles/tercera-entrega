@@ -15,16 +15,13 @@ header {
   height: 70;
   width: auto;    
   justify-content: center;     
-  padding: 10px;   
-  background: $color-principal;    
+  padding: 10px;      
   text-align: center;  
      
    }
    .nav-item :hover{
     color:#198754;
-   }
-    
-    
+   }    
   
     
   .navbar-brand img{
@@ -127,6 +124,4 @@ img.col1{
    .pie-de-pagina{
     text-align: center;
    }
-   .carousel-inner{
-    height: 500px;
-   }
+   

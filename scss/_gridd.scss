@@ -12,19 +12,19 @@
     grid-auto-flow: dense;
     margin-top: 5px;
 }
-.card-title{
-    font-size: 40px;
-     @include mobile {
-        font-size: 15px;
+
+.card-text{  
+    font-size: 2rem;
+    @include desktop{
+        font-size:1.8rem ;
+    }    
+    @include tablet {
+        font-size:1rem; 
     }
-}
-
-
-.card-text{
-    font-size: 25px;
     @include mobile{
-        font-size: 10px;
+        font-size: .5rem;
     }
+   
 }
 
 

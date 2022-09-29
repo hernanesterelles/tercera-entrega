@@ -12,7 +12,6 @@ header {
   width: auto;
   justify-content: center;
   padding: 10px;
-  background: #f9f9fa;
   text-align: center; }
 
 .nav-item :hover {
@@ -101,9 +100,6 @@ img.col1 {
 .pie-de-pagina {
   text-align: center; }
 
-.carousel-inner {
-  height: 500px; }
-
 .clasesonline {
   display: flex;
   align-items: center;
@@ -173,10 +169,6 @@ td {
   font-size: 30px;
   font-weight: 600; }
 
-.lauti {
-  background-color: black;
-  color: aliceblue; }
-
 .productos {
   display: flex;
   flex-flow: row wrap;
@@ -238,17 +230,17 @@ button {
   grid-auto-flow: dense;
   margin-top: 5px; }
 
-.card-title {
-  font-size: 40px; }
-  @media screen and (max-width: 480px) {
-    .card-title {
-      font-size: 15px; } }
-
 .card-text {
-  font-size: 25px; }
+  font-size: 2rem; }
+  @media screen and (max-width: 992px) {
+    .card-text {
+      font-size: 1.8rem; } }
+  @media screen and (max-width: 768px) {
+    .card-text {
+      font-size: 1rem; } }
   @media screen and (max-width: 480px) {
     .card-text {
-      font-size: 10px; } }
+      font-size: .5rem; } }
 
 .contactos {
   justify-content: center; }
