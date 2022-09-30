@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/main.css">    
+        <link rel="stylesheet" href="../css/main.css">            
         <title>contactos</title>
+        <script src="https://kit.fontawesome.com/2eb2d53669.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="formulario">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                
             <div class="container-fluid">
             <a class="navbar-brand " href="./index.html"><img src="../imagenes/logo.jpeg" alt=""></a>
@@ -43,32 +44,48 @@
             </div>            
         </nav>
             <header>        
-                <div>
-                    <h1 class="balma"> Balma Music </h1>
+                <div class="titulo">
+                    <h1 class="titulo"> CONTACTOS Y SUCURSALES</h1>
                 </div>         
-            </header>            
-            <main class="contactos">                             
-                <div class="contactos">                               
-                    <form class="contacto">
-                        <label for="nombre" class="form-label">Nombre</label><br>
-                        <input type="text" id="nombre"class="form-input" placeholder="escriba su nombre"><br>
-                        <label for="apellido"class="form-label">apellido</label><br>
-                        <input type="text" id="apellido"placeholder="escriba su apellido" ><br>
-                        <label for="correo electronico"class="form-label">correo electronico</label><br>
-                        <input type="email"id="correo electronico"placeholder="escriba su correo"><br>
-                        <label for="elegi una sucursal" class="form-label">elegi una sucursal</label><br>
-                        <select name="elegi una sucursal" id="elegi una sucursal">
-                            <option value="Mar del plata">Mar del Plata</option>
-                            <option value="La Plata">La plata</option>
-                            <option value="Buenos aires">Buenos aires</option><br>
+            </header>
+            <div class="sucursales">                                                              
+                    <section class="contacto">
+                        <h4>Contactanos</h4>                        
+                        <input class="form-input" type="text" id="nombre" placeholder="escriba su nombre">                      
+                        <input class="form-input" type="text" id="apellido"placeholder="escriba su apellido" >                       
+                        <input class="form-input"type="email"id="correo electronico"placeholder="escriba su correo">                        
+                        <select class="form-input" name="elegi una sucursal" id="elegi una sucursal"placeholder="elegi una sucursal">
+                            <option class="form-input"value="Mar del plata">Mar del Plata</option>
+                            <option class="form-input"value="La Plata">La plata</option>
+                            <option class="form-input"value="Buenos aires">Buenos aires</option>
                         </select>
-                        <input type="checkbox"> recibi todas las ofertas <br>
-                        <textarea  id="name" cols="30" rows="10">dejanos un mensaje</textarea><br>
-                        <input type="reset" > 
-                        <input type="submit">
-                    </form>
-                </div>               
-            </main>    
+                        <input type="checkbox"> recibi todas las ofertas 
+                        <textarea class="form-input" id="name" cols="30" rows="10"placeholder="dejanos un mensaje">dejanos un mensaje</textarea>
+                        <input class="form-boton"type="reset" > 
+                        <input class="form-boton"type="submit">
+                    </section>
+                    <div class="ubicacion">                                       
+                        <h3>Sucursales</h3>
+                        <div class="ubi">                                               
+                            <img src="../imagenes/ubicacion.png" alt="">La plata 
+                        </div>
+                        <div class="ubi">                                               
+                            <img src="../imagenes/ubicacion.png" alt="">Mar Del Plata
+                        </div>
+                        <div class="ubi">                                               
+                            <img src="../imagenes/ubicacion.png" alt="">Buenos Aires
+                        </div>
+                        <div class="ubi">                                               
+                            <img src="../imagenes/whatssap.png" alt="">Whatsapp
+                        </div>
+                        <div class="ubi">                                               
+                            <img src="../imagenes/mail.png" alt="">Correo
+                        </div>
+                        <div class="ubi">                                               
+                            <img src="../imagenes/telefono.png" alt="">Lineas rotativas
+                        </div>                                                                                                             
+                    </div>
+            </div>                                          
         <footer> 
             <div class="container-fluid">
                 <div class="row p-5 bg-dark text-white">

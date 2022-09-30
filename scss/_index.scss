@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
 }
+
+  
+
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: black!important;
@@ -94,18 +98,9 @@ img.col1{
   @media screen and (max-width: 768px) {      
         
 
-    .title{
-        display: flex;
-        width: 500px;
-        flex-direction: column;        
-        justify-content: center;
-    }
     
-    }  @keyframes clase{
-      0%{background-position: 0 50%;}
-      50%{background-position: 100% 50%;}
-      100%{background-position: 0 50%;}
-  }
+    
+    
   
    .container-lg{
       width: auto;
@@ -124,4 +119,5 @@ img.col1{
    .pie-de-pagina{
     text-align: center;
    }
+  }
    
