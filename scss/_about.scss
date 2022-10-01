@@ -1,0 +1,34 @@
+.card-img-overlay>.card-title{
+    font-size:2.5rem ;
+    text-align: center;
+    padding-top: 20px;
+    @include desktop{
+    text-align: center;
+    font-size: 2.5rem;
+}
+@include tablet{
+    text-align: center;
+    font-size: 2rem;
+
+}
+@include mobile{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+}
+.card-img-overlay>.card-text{  
+    font-size: 2rem;
+    align-items: center;
+    padding-top: 20px;
+    @include desktop{
+        font-size:1.6rem ;
+    }    
+    @include tablet {
+        font-size:1rem; 
+    }
+    @include mobile{
+        font-size: .5rem;
+    }
+   
+}

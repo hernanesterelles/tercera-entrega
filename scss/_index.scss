@@ -45,26 +45,35 @@ main{
   justify-content: center;
   padding: 1.5rem;
 }.marca{
-  text-align: center;    
-    font-size: 60px;
-    font-weight: 600;
-    padding-top: 15px;
+  margin-top:20px;
+  text-align: center;   
+    font-size: 40px;
+    font-weight: 600;    
     padding-bottom: 15px;
+    height: 50px;
+    @include color-gradientes;
+    @include mobile{
+      font-size: 40px;
+    }   
   
 }  
 .destacados{
   display: flex;
   justify-content: center;
   margin: 5px;
-  align-items: center;    
+  align-items: center; 
 }
 .container-md {
   padding: 5px;
-  
+  margin: 0px;  
 } 
 
 .desta h2{
   @extend .marca ;
+  @include color-gradientes;
+  @include mobile {
+    font-size: 40px;
+  }
 }
 
 .formasdepago img{ 
@@ -75,9 +84,7 @@ main{
 
 
 img.col1{
-  width: 350px;
-  height: 350px;
-  margin-top:20px ;
+  
   @include mobile{
           width: 300px;
           height: 300px;
@@ -95,12 +102,7 @@ img.col1{
     }
     
   }
-  @media screen and (max-width: 768px) {      
-        
-
-    
-    
-    
+  @media screen and (max-width: 768px) {  
   
    .container-lg{
       width: auto;
