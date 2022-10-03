@@ -15,7 +15,14 @@
 
     }
     
-}
+}.grid-item1{
+    overflow: hidden;
+  }
+  .img-fluid:hover{   
+    transition: all .5s ease-in-out;
+    transform: scale(1.15);
+    
+  }
 
     
 
