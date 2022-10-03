@@ -267,8 +267,11 @@ h1:hover {
   grid-auto-flow: dense;
   margin-top: 5px;
   align-items: center;
-  text-align: center;
-  overflow: hidden; }
+  text-align: center; }
+  @media screen and (min-width: 993px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-auto-flow: dense; } }
 
 .formulario {
   background-image: url(https://i.pinimg.com/564x/01/bd/f8/01bdf8f4a2feb44804f35a9d125ee89d.jpg); }
