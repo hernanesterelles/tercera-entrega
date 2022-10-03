@@ -36,11 +36,17 @@
      
     
 }
-button {
+.button>button {
     background-color: rgb(9, 120, 211);
     color:white ;
     width: 100px;
     border-radius: 7px;
+    @include mobile {
+        width: 70px;
+        font-size: 12px;
+        
+
+    }
    
 }
 .button :hover{
@@ -50,4 +56,19 @@ button {
     position: absolute;
     bottom: 0%;
     margin: .5rem;
+}
+.prod{
+    @include color-azul;
+    margin-top: 20px;
+}
+h1.balma {
+    transition: 1 linear;
+    color:rgb(193, 183, 183);
+    }
+h1:hover{
+    color: white;       
+    text-shadow: 0 0 10px black,
+    0 0 20px white,
+    0 0 60px white;
+   
 }

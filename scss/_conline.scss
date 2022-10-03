@@ -12,6 +12,7 @@
 .header-clase{
     @include color-azul;
     width: 100%;
+    margin-top: 20px;
    }
     
 .balma{ 
@@ -50,13 +51,32 @@ td{
         font-size:15px;
     }
 }
-#liveAlertBtn{
+#liveAlertBtn{ 
+    
     background-color: #1378c5;
     height: 50px;
     width: 200px;
     font-size: 15px;
     color: antiquewhite;
-    margin: 5px;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    @include mobile{
+        display: flex;
+        justify-content: center; 
+        align-items: center;  
+        width: 150px;
+        margin-top:10px;
+        margin-bottom: 10px;
+
+    }
+   
+    
  }
+ .col{
+    padding-left: 50px;
+ }
+ 
  
     

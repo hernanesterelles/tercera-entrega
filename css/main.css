@@ -15,7 +15,7 @@ header {
   text-align: center; }
 
 .nav-item :hover {
-  color: #198754; }
+  color: #4facf3; }
 
 .navbar-brand img {
   width: 250px;
@@ -67,31 +67,56 @@ main {
   width: 50px; }
 
 @media screen and (max-width: 480px) {
-  img.col1 {
-    width: 300px;
-    height: 300px;
-    padding-left: 50px;
-    margin-bottom: 10px; } }
-
-@media screen and (max-width: 480px) {
   .container-fluid {
     text-align: center; } }
 
 @media screen and (max-width: 768px) {
   .container-fluid {
     text-align: center; } }
+
+.btn.btn-outline-success {
+  --bs-btn-color: rgb(79 172 243);
+  --bs-btn-border-color: rgb(79 172 243);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(79 172 243);
+  --bs-btn-hover-border-color: rgb(79 172 243); }
 
 @media screen and (max-width: 768px) {
   .container-lg {
     width: auto;
-    height: 200px; }
+    height: 200px; } }
+
+@media screen and (max-width: 768px) {
   .container- {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly; } }
+
+@media screen and (max-width: 768px) {
   .container-li {
-    justify-content: space-between; }
+    justify-content: space-between; } }
+
+@media screen and (max-width: 768px) {
   .pie-de-pagina {
     text-align: center; } }
+
+.button-compras {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  background-color: black;
+  color: #bab2b2;
+  font-size: 25px; }
+  .button-compras :hover {
+    color: white;
+    text-shadow: 0 10 10px snow, 0 20 20px white, 0 60 60px white; }
+
+.grid-item1 {
+  overflow: hidden; }
+
+.img-fluid:hover {
+  transition: all .5s ease-in-out;
+  transform: scale(1.15); }
 
 .clasesonline {
   display: flex;
@@ -106,7 +131,8 @@ main {
 .header-clase {
   background: linear-gradient(to left, #4facf3, #141313, #4facf3);
   color: white;
-  width: 100%; }
+  width: 100%;
+  margin-top: 20px; }
 
 .balma {
   text-align: center;
@@ -149,7 +175,21 @@ td {
   width: 200px;
   font-size: 15px;
   color: antiquewhite;
-  margin: 5px; }
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px; }
+  @media screen and (max-width: 480px) {
+    #liveAlertBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
+
+.col {
+  padding-left: 50px; }
 
 .productos {
   display: flex;
@@ -187,11 +227,15 @@ td {
   justify-content: flex-end;
   height: 40px; }
 
-button {
+.button > button {
   background-color: #0978d3;
   color: white;
   width: 100px;
   border-radius: 7px; }
+  @media screen and (max-width: 480px) {
+    .button > button {
+      width: 70px;
+      font-size: 12px; } }
 
 .button :hover {
   background-color: #06227b; }
@@ -200,6 +244,19 @@ button {
   position: absolute;
   bottom: 0%;
   margin: .5rem; }
+
+.prod {
+  background: linear-gradient(to left, #4facf3, #141313, #4facf3);
+  color: white;
+  margin-top: 20px; }
+
+h1.balma {
+  transition: 1 linear;
+  color: #c1b7b7; }
+
+h1:hover {
+  color: white;
+  text-shadow: 0 0 10px black, 0 0 20px white, 0 0 60px white; }
 
 .grid-container {
   display: grid;
@@ -210,7 +267,8 @@ button {
   grid-auto-flow: dense;
   margin-top: 5px;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .formulario {
   background-image: url(https://i.pinimg.com/564x/01/bd/f8/01bdf8f4a2feb44804f35a9d125ee89d.jpg); }
@@ -238,27 +296,29 @@ h4 {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid  #198754;
+  border: 1px solid #4facf3;
   font-family: 'Courier New', Courier, monospace;
   color: white; }
 
 .form-boton {
   width: 100%;
   margin: 10px;
-  border: 1px solid  #198754;
+  border: 1px solid #4facf3;
   background: #07020c;
   color: white; }
 
 .form-boton:hover {
-  background: #198754; }
+  background: #4facf3; }
 
 .sucursales {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 25px; }
   @media screen and (max-width: 768px) {
     .sucursales {
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center;
+      align-items: center; } }
   @media screen and (max-width: 480px) {
     .sucursales {
       flex-direction: column;
@@ -267,11 +327,14 @@ h4 {
 
 .ubicacion {
   border: 1px solid black;
-  background-color: #198754;
+  background-color: #34748e;
   width: 300px;
   height: 400px;
   border-radius: 15px;
   color: black; }
+  @media screen and (max-width: 768px) {
+    .ubicacion {
+      margin-bottom: 15px; } }
   @media screen and (max-width: 480px) {
     .ubicacion {
       justify-content: center;
@@ -280,10 +343,14 @@ h4 {
 .ubi {
   margin: 25px;
   padding-left: 60px;
-  align-items: center; }
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  text-shadow: 5 5 5px black; }
 
 h3 {
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .titulo {
   font-size: 30px;
@@ -292,7 +359,8 @@ h3 {
   padding-top: 7px;
   font-family: 'Mouse Memoirs', sans-serif;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to left, black, #198754);
+  background: linear-gradient(to left, #4facf3, #141313, #4facf3);
+  color: white;
   color: white; }
   @media screen and (max-width: 480px) {
     .titulo {
@@ -313,7 +381,8 @@ h3 {
   @media screen and (max-width: 480px) {
     .card-img-overlay > .card-title {
       text-align: center;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      padding-top: 5px; } }
 
 .card-img-overlay > .card-text {
   font-size: 2rem;
@@ -327,4 +396,11 @@ h3 {
       font-size: 1rem; } }
   @media screen and (max-width: 480px) {
     .card-img-overlay > .card-text {
-      font-size: .5rem; } }
+      font-size: .5rem;
+      padding-top: 2px; } }
+
+.about {
+  background: linear-gradient(to left, #4facf3, #141313, #4facf3);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px; }
