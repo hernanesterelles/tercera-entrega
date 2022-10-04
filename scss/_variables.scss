@@ -23,13 +23,13 @@ $color:('principal':rgb(249, 249, 250),'secundario': rgb(8, 8, 8),'relleno' :#7d
       @content;        }
 }
 @mixin desktop {
-    @media screen and (max-width:992px) {        
+    @media screen and (max-width:1024px) {        
         
       @content;
     }
 }  
 @mixin LG {
-  @media screen  and (max-width: 1024px){
+  @media screen  and (max-width: 1118px){
     
     @content;
 

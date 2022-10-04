@@ -53,7 +53,7 @@ main{
     height: 50px;    
     @include color-gradientes;
     @include mobile{
-      font-size: 40px;
+      font-size: 35px;
     }  
 }
 .destacados{
@@ -71,7 +71,7 @@ main{
   @extend .marca ;
   @include color-gradientes;
   @include mobile {
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 
