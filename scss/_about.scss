@@ -31,11 +31,9 @@
     }
     @include mobile{
         font-size: 10px;
-        padding-top: 0px;
-        padding: 10px;
-         
-    }
-   
+        margin:5px;
+        padding: 5px;         
+    }   
 }
 .card-img-overlay{
     @include tablet{
@@ -43,9 +41,7 @@
     }
     @include mobile{ 
         padding: 10px;
-    }
-        
-         
+    }          
 }
    
 .about{
